@@ -1,4 +1,4 @@
-##my-mint-project
+# my-mint-project
 
-DEMO:
+## DEMO: 
 https://my-mint-project.netlify.app/
