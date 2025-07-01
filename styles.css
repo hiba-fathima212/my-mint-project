@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif !important;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        zoom: 0.8;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#bootstrap-overrides h1 {
+    /* 100+1=101 priority score, yay! */
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    /* background-color: rgb(221, 221, 221); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 50px; */
+}
+
+.navbar img {
+    width: 100px;
+}
+
+.navbar .nav-items {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* .navbar .toggle {
+    display: none;
+} */
+
+@media screen and (max-width: 800px) {
+    .navbar .toggle {
+        display: block;
+    }
+
+    .navbar .nav-items {
+        display: none;
+    }
+}
+
+
+button {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button i {
+    /* font-size: 12px; */
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #1ECA7C !important;
+    color: #fff !important;
+    transition: 0.3s !important;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px; */
+}
+
+.login-btn {
+    border: none;
+    background: none;
+    color: #2379D9;
+    margin-right: 5px;
+    padding: 5px 20px;
+}
+
+.signup-btn {
+    border: none;
+    color: white;
+    background-color: #FD8A10;
+    padding: 5px 20px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-image: url("https://img.lovepik.com/photo/48013/0603.jpg_wh860.jpg");
+    background-size: cover;
+}
+
+.hero .sub {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.hero h1 span {
+    color: #00C96D;
+}
+
+.hero p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero {
+        height: 800px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.featured-services .icon-box {
+    padding: 20px;
+}
+
+/* .featured-services .icon-box-bg {
+    background-image: linear-gradient(0deg, #222222 0%, #2f2f2f 50%, #222222 100%);
+} */
+
+.featured-services .icon {
+    margin-bottom: 15px;
+}
+
+.featured-services .icon img {
+    height: 70px;
+}
+
+.featured-services .icon i {
+    color: #1ECA7C;
+    font-size: 42px;
+}
+
+.featured-services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.featured-services .title a {
+    color: #000000;
+    transition: 0.3s;
+}
+
+.featured-services .icon-box:hover .title a {
+    color: #1ECA7C;
+}
+
+.featured-services .description {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0 40px;
+    height: 60px;
+}
+
+
+/*--------------------------------------------------------------
+# Personilzed
+--------------------------------------------------------------*/
+
+.list-group-item {
+    background-color: #f8f8f8;
+    border: none !important;
+    font-size: small;
+}
+
+.img-fluid {
+    max-width: 100%;
+    margin-top: 75px;
+    height: auto;
+}
+
+.fa {
+    margin-right: 20px;
+    margin-top: 6px;
+    /* color: #007bff; */
+}
+
+@media screen and (max-width: 800px) {
+    .img-fluid {
+        margin-top: 0px;
+    }
+}
+
+/* Get started section */
+
+.get-started {
+    background-color: #F6F6F6;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.get-started .list-group-item {
+    background-color: #F6F6F6;
+}
+
+.get-started .img-fluid {
+    margin-top: 0;
+}
+
+/* Mint leaf */
+
+.mint-leaf {
+    background-color: #6B999B;
+    color: #fff;
+}
+
+.mint-leaf .container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mint-leaf img {
+    margin: auto;
+    width: 150px;
+    margin-top: -70px;
+}
+
+.mint-leaf p {
+    font-weight: 500;
+    color: #F6F8F6;
+}
+
+.mint-leaf button {
+    background: none;
+    color: #F6F8F6;
+    border: 1px solid #94c4c7;
+    padding: 10px 30px;
+}
+
+/* Sign up section */
+
+.signup-section .container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #cacaca;
+}
+
+.signup-section .signup-btn {
+    border: none;
+    color: white;
+    background-color: #FD8A10;
+    border: 3px solid #FD8A10;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.signup-section .login-btn {
+    background: none;
+    color: #A2A4A1;
+    border: 3px solid #bbbdba;
+    margin-right: 5px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer .app-icons {
+    border-bottom: 1px solid #303030;
+    padding-bottom: 80px !important;
+}
+
+.footer .app-icons img {
+    border: 1px solid #424242;
+}
+
+
+.copyright {
+    margin-top: 1rem;
+}
+
+.copyright i {
+    color: #01D3F4;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.copyright .links a {
+    margin-left: 20px;
+    font-size: small;
+    font-weight: 600;
+}
